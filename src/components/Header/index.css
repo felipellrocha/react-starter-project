@@ -1,0 +1,7 @@
+:local(.component) {
+  display: flex;
+
+  & > .logo {
+    background: #f00;
+  }
+}

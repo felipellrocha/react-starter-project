@@ -32,6 +32,11 @@ module.exports = {
         test: /\.html$/,
         exclude: /node_modules/,
         loader: 'html-loader',
+      },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loader: 'style!css!sass-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
       }
     ]
   },
